@@ -1,0 +1,62 @@
+merchantId	API Login	    API Key						accountId	País
+508029		pRRXKOl8ikMmt9u	4Vj8eK4rloUd272L48hsrarnUA	512327	  	Brasil
+
+
+
+merchantId: 508029
+ApiKey: 4Vj8eK4rloUd272L48hsrarnUA
+referenceCode: TestPayU
+accountId: 512326
+description: Test PAYU
+amount: 3
+tax: 0
+taxReturnBase: 0
+currency: USD
+signature: ba9ffa71559580175585e45ce70b6c37
+test: 1
+buyerEmail: test@test.com
+
+
+
+
+<form name="testPayU" id="testPayU" method="post" action="https://sandbox.gateway.payulatam.com/ppp-web-gateway/">
+      <input name="merchantId"    type="hidden"  value="<?php print(PAYU_MERCHANTID); ?>"   >
+      <input name="accountId"     type="hidden"  value="<?php print(PAYU_ACCOUNTID); ?>" >
+      <input name="description"   type="hidden"  value="<?php print($descItem);?>"  >
+      <input name="referenceCode" type="hidden"  value="<?php print($referenceCode);?>"  >
+      <input name="amount"        type="hidden"  value="<?php print($i_transaccion);?>"   >
+      <input name="tax"           type="hidden"  value="0"  >
+      <input name="taxReturnBase" type="hidden"  value="0" >
+      <input name="currency"      type="hidden"  value="ARS" >
+      <input name="signature"     type="hidden"  value="<?php print($signature);?>"  >
+      <input name="test"          type="hidden"  value="0" >
+      <input name="buyerEmail"    type="hidden"  value="<?php print($dir_mail);?>"  >
+      <input name="responseUrl"    type="hidden"  value="http://www.patagondigital.com.ar" >
+	  
+	  
+      <input name="confirmationUrl"    type="hidden"  value="http://www.sistemalewtel.com.ar/confirmationPayU.php" >
+	  
+      <input name="payerFullName"    type="hidden"  value="<?php print($nombreCliente);?>"  >
+      <input name="extra2"    type="hidden"  value="<?php print($extra2);?>"   >
+	  
+      <input name="Submit"       style="visibility:hidden" type="submit"  value="Enviar" >
+    </form>
+	
+	
+	
+	  <input name="responseUrl"   type="display"  value="http://www.test.com/response" >
+  <input name="confirmationUrl"    type="display"  value="http://www.sebasgracia.com" >
+  
+  
+    <input name="buyerFullName" 	type="hidden"  value="UsrPrueba" >
+  <input name="shippingCity"  	type="hidden"  value="xxddffrrr12" >
+  <input name="shippingCountry" type="hidden"  value="CO" >
+  <input name="shippingAddress" type="hidden"  value="CLL1525851" >
+  <input name="telephone"     	type="hidden"  value="3102703851">
+  
+  
+  
+  
+  
+    <input name="tax"           	type="hidden"  value="0"  />
+  <input name="taxReturnBase" 	type="hidden"  value="0" />
